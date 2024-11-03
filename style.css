@@ -1,0 +1,96 @@
+img{
+    border-style: solid;
+    border-color: rgb(245, 236, 236);
+    border-width: px;
+    margin: 30px;
+   
+}
+
+/* สีพื้นหลัง */
+body{
+    background-color: #ece2c5;
+    
+    
+}
+
+/* เว้นขอบหัวเรื่อง */
+h3 {
+    margin-left: 20px; /* ระยะห่างด้านซ้ายจากขอบจอ */
+    margin-top: 60px; /* ระยะห่างด้านบนจากขอบจอ */
+    margin-right: 20px; /* ระยะห่างด้านขวาจากขอบจอ */
+    margin-bottom: 5px; /* ระยะห่างด้านล่างจากขอบจอ */
+    text-decoration: underline;
+    color: #56523e; /* สีของข้อความ */
+  }
+
+/* ตำแหน่งตัวอักษร */
+.text-section {
+    flex: 1; /* ให้ข้อความใช้พื้นที่ครึ่งหนึ่งของหน้าจอ */
+    display: flex;
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    justify-content: flex-start; /* จัดให้อยู่ด้านขวาของภาพ */
+    padding: 20px;
+}
+h5 {
+    text-decoration: underline;
+}
+
+/* ปรับสี ชื่อหนังสือ และ กลับ */
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #b1ae98;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color  #bebcb3;
+    border-width: 5px;
+    border-color: #bebba2;
+
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ที่ปุ่ม */
+    transition: transform 0.2s; /* กำหนดการเปลี่ยนแปลงเมื่อ hover */
+   
+  }
+
+  .button-link:hover {
+    background-color: #878474;
+  }
+
+  .bounce-button:hover {
+    transform: translateY(-10px); /* เด้งขึ้นเมื่อ hover */
+}
+
+
+  
+  /* ปรับสีของ ข้อมูลเพิ่มเติม */
+  .btn-primary {
+    background-color: #b1ae98; /* สีพื้นหลังใหม่ */
+    border-color: #837b5f; /* สีขอบ */
+    color: #fff; /* สีข้อความ */
+  }
+
+  /* ปรับแต่งเมื่อ hover */
+  .btn-primary:hover {
+    background-color: #837b5f; /* สีเมื่อ hover */
+    border-color: #6f674f; /* สีขอบเมื่อ hover */
+  }
+
+
+  /* ภาพ */
+  .image-container {
+    display: inline-block; /* ให้ภาพอยู่ในแนวเดียวกัน */
+    overflow: hidden; /* ป้องกันการแสดงภาพที่ใหญ่เกินไป */
+    border: 1px solid #ddd; /* กรอบภาพ */
+    border-radius: 8px; /* ทำมุมของกรอบให้โค้งมน */
+}
+
+.image-container img {
+    width: 300px; /* กำหนดความกว้างของภาพ */
+    transition: transform 0.6s ease; /* กำหนดการเปลี่ยนแปลงเมื่อ hover */
+}
+
+.image-container:hover img {
+    transform: scale(1.1); /* ขยายภาพเมื่อ hover */
+}
